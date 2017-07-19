@@ -22,7 +22,7 @@ import urllib
 # <p class="story">...</p>
 # """
 
-url = urllib.urlopen('http://www.aflcio.org/Legislation-and-Politics/Legislative-Alerts').read()
+url = urllib.urlopen('https://nationaldaycalendar.com/latest-posts/').read()
 
 soup = BeautifulSoup(url, 'html.parser')
 print(soup.prettify())
